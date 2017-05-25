@@ -8,12 +8,16 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from 'app/app-routing.module';
 import { PathNotFoundComponent } from 'app/components/_404.component';
+import { Nvd3StackedAreaChartComponent } from './components/nvd3-stacked-area-chart/nvd3-stacked-area-chart.component';
+import { BlueCarComponent } from './components/blue-car/blue-car.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    PathNotFoundComponent
+    PathNotFoundComponent,
+    Nvd3StackedAreaChartComponent,
+    BlueCarComponent
   ],
   imports: [
     BrowserModule,
