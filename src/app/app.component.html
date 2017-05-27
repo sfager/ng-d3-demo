@@ -15,8 +15,9 @@
         <li routerLinkActive="active"><a [routerLink]="['home']">Home</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-            aria-haspopup="true" aria-expanded="false">Charts <span class="caret"></span></a>
+            aria-haspopup="true" aria-expanded="false">NVD3 Charts <span class="caret"></span></a>
           <ul class="dropdown-menu">
+            <li><a [routerLink]="['simplelinechart']" routerLinkActive="active">Simple Line Chart</a></li>
             <li><a [routerLink]="['stackedareachart']" routerLinkActive="active">Stacked Area Chart</a></li>
           </ul>
         </li>

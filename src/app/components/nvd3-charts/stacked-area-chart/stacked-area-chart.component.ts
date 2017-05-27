@@ -5,8 +5,8 @@ import * as nv from 'nvd3';
 
 @Component({
   selector: 'app-nvd3-stacked-area-chart',
-  templateUrl: './nvd3-stacked-area-chart.component.html',
-  styleUrls: ['./nvd3-stacked-area-chart.component.css']
+  templateUrl: './stacked-area-chart.component.html',
+  styleUrls: ['./stacked-area-chart.component.css']
 })
 export class Nvd3StackedAreaChartComponent implements OnInit {
 
