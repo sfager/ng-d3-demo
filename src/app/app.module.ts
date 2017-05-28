@@ -8,7 +8,11 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from 'app/app-routing.module';
 import { PathNotFoundComponent } from 'app/components/_404.component';
-import { Nvd3StackedAreaChartComponent, Nvd3SimpleLineChartComponent } from './components/nvd3-charts';
+import {
+  Nvd3StackedAreaChartComponent,
+  Nvd3SimpleLineChartComponent,
+  Nvd3ScatterBubbleChartComponent
+} from './components/nvd3-charts';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,8 @@ import { Nvd3StackedAreaChartComponent, Nvd3SimpleLineChartComponent } from './c
     HomeComponent,
     PathNotFoundComponent,
     Nvd3StackedAreaChartComponent,
-    Nvd3SimpleLineChartComponent
+    Nvd3SimpleLineChartComponent,
+    Nvd3ScatterBubbleChartComponent
   ],
   imports: [
     BrowserModule,
