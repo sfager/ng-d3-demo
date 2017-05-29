@@ -22,7 +22,7 @@
     "@angular/router": "^4.0.0",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
-    "d3": "^3.5.17",
+    "d3": "3.5.17",
     "jquery": "^3.2.1",
     "nvd3": "^1.8.5",
     "rxjs": "^5.1.0",
@@ -31,7 +31,7 @@
   "devDependencies": {
     "@angular/cli": "1.0.0",
     "@angular/compiler-cli": "^4.0.0",
-    "@types/d3": "^3.5.38",
+    "@types/d3": "3.5.38",
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
     "@types/nvd3": "^1.8.37",

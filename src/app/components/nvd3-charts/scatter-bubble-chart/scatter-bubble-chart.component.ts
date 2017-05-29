@@ -36,7 +36,6 @@ export class Nvd3ScatterBubbleChartComponent implements OnInit {
       }
 
       const myData = this.randomData(4, 40);
-      console.log('myData: ', myData);
       d3.select('.chart svg')
         .datum(myData)
         .call(chart);

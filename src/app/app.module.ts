@@ -11,7 +11,8 @@ import { PathNotFoundComponent } from 'app/components/_404.component';
 import {
   Nvd3StackedAreaChartComponent,
   Nvd3SimpleLineChartComponent,
-  Nvd3ScatterBubbleChartComponent
+  Nvd3ScatterBubbleChartComponent,
+  Nvd3DiscreteBarChartComponent
 } from './components/nvd3-charts';
 
 @NgModule({
@@ -21,7 +22,8 @@ import {
     PathNotFoundComponent,
     Nvd3StackedAreaChartComponent,
     Nvd3SimpleLineChartComponent,
-    Nvd3ScatterBubbleChartComponent
+    Nvd3ScatterBubbleChartComponent,
+    Nvd3DiscreteBarChartComponent
   ],
   imports: [
     BrowserModule,

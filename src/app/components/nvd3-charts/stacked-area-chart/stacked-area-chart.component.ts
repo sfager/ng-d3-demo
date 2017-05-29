@@ -21,18 +21,18 @@ export class Nvd3StackedAreaChartComponent implements OnInit {
       nv.addGraph(() => {
         const chart = nv.models.stackedAreaChart()
           .margin({ right: 100 })
-          .x(function (d) { return d[0] })   //We can modify the data accessor functions...
-          .y(function (d) { return d[1] })   //...in case your data is formatted differently.
-          .useInteractiveGuideline(true)    //Tooltips which show all data points. Very nice!
-          .rightAlignYAxis(true)      //Let's move the y-axis to the right side.
+          .x(d => d[0])                   // We can modify the data accessor functions...
+          .y(d => d[1])                   // ...in case your data is formatted differently.
+          .useInteractiveGuideline(true)  // Tooltips which show all data points. Very nice!
+          .rightAlignYAxis(true)          // Let's move the y-axis to the right side.
           .duration(500)
-          .showControls(true)       //Allow user to choose 'Stacked', 'Stream', 'Expanded' mode.
+          .showControls(true)             // Allow user to choose 'Stacked', 'Stream', 'Expanded' mode.
           .clipEdge(true);
 
 
         // Format x-axis labels with custom functions.
         chart.xAxis
-          .tickFormat(d => d3.time.format('%x')(new Date(d)))
+          .tickFormat(d => d3.time.format('%x')(new Date(d)));
 
         chart.yAxis
           .tickFormat(d3.format(',.2f'));
